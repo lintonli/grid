@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+*{
+    font-family: 'Rubik', sans-serif;
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+.time{
+    background-color: hsl(226, 43%, 10%);
+    height: 100vh;
+    width: 100%;
+    display: grid;
+}
+.container{
+height: 80%;
+width: 80%;
+margin: auto;
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+grid-gap: 20px;
+align-items: center;
+justify-content: space-between;
+grid-template-rows: repeat(2,1fr);
+grid-template-areas:"one two three four""one five six seven" ;
+}
+.ellipsis{
+    grid-area: one;
+    background-color: hsl(235, 46%, 20%);
+    height: 100%;
+    border-radius: 10px;
+
+}
+.profile{
+    background-color: hsl(235, 45%, 61%);
+    border-radius: 10px;
+    height: 60%;
+    padding: 30px;
+    
+    
+}
+.img img{
+    width: 60px;
+    margin-bottom: 60px;
+}
+.name h1{
+    color: white;
+    font-size: 10px;
+}
+.name p{
+    color: white;
+    font-weight: 500;
+}
+.pinfo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    gap: 10px;
+    margin-left: 20px;
+    margin-top: 20px;
+
+}.pinfo a{
+    text-decoration: none;
+    color: white;
+    gap: 5px;
+}
+.work{
+    height: 100%;
+    grid-area: two;
+    background-image:url(images/icon-work.svg);
+    background-color:hsl(15, 100%, 70%) ;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-position-x: 95%;
+}
+
+.winfo{
+    height: 85%;
+    background-color:hsl(235, 46%, 20%);
+    margin-top:15% ;
+    border-radius: 10px;
+    color: whitesmoke;
+    padding:30px;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 10px;
+    font-weight: 10;
+}
+.play{
+    height: 100%;
+    grid-area: three;
+    border-radius: 10px;
+    background-color: hsl(195, 74%, 62%);
+    background-image: url(images/icon-play.svg);
+    background-repeat: no-repeat;
+    background-position-x: 95%;
+}
+.pinfo1{
+    padding:30px;
+    height: 85%;
+    background-color: hsl(235, 46%, 20%);
+    margin-top: 15%;
+    border-radius: 10px;color: whitesmoke;
+
+}
+.study{
+    height: 100%;
+    grid-area: four;
+    background-color:hsl(348, 100%, 68%) ;
+    background-image: url(images/icon-study.svg);
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-position-x: 95%;
+
+}
+.sinfo{
+    padding:30px;
+    height: 85%;
+    background-color:hsl(235, 46%, 20%);
+    margin-top: 15%;
+    border-radius: 10px;
+    color: whitesmoke;
+    /* margin-bottom: 20px; */
+}
+.exercise{
+   
+    height: 100%;
+    grid-area: five;
+    background-color: hsl(145, 58%, 55%);
+    background-image: url(images/icon-exercises.svg);
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-position-x: 95%;
+}
+.einfo{
+    padding:30px;
+ 
+    height: 85%;
+    background-color: hsl(235, 46%, 20%);
+    margin-top: 15%;
+    border-radius: 10px;
+    color: whitesmoke;
+}
+.social{
+    height: 100%;
+    grid-area: six;
+    background-color: hsl(264, 64%, 52%);
+    background-image: url(images/icon-social.svg);
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-position-x: 95%;
+}
+.soinfo{
+    padding:30px;
+    height: 85%;
+    background-color: hsl(235, 46%, 20%);
+    margin-top: 15%;
+    border-radius: 10px;
+    color: whitesmoke;
+}
+.care{
+    height: 100%;
+    grid-area: seven;
+    background-color: hsl(43, 84%, 65%);
+    background-image: url(images/icon-self-care.svg);
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-position-x: 95%;
+}
+.cinfo{
+    padding:30px;
+    height: 85%;
+background-color: hsl(235, 46%, 20%);
+margin-top: 15%;
+border-radius: 10px;
+color: whitesmoke;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+   margin-top: 10px;
+   
+}
+.content h1{
+    font-weight: 500;
+}
+.content p{
+    font-weight: 300;
+}
+.nav h1{
+    font-weight: 400;
+}
+@media(max-width:800px){.container{
+    height: 80%;
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+    grid-template-rows: repeat(7,1fr);
+    grid-template-areas:"one" "two" "three" "four" "five" "six" "seven" ;
+    }}
